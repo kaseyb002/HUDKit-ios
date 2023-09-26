@@ -1,5 +1,9 @@
 import UIKit
 
 public final class HUD {
-    public static var keyWindow: UIWindow?
+    public static func setup(keyWindow: UIWindow) {
+        Self.keyWindow = keyWindow
+    }
+    
+    static var keyWindow: UIWindow?
 }
