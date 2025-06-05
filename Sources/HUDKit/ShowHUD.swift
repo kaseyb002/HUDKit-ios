@@ -1,10 +1,6 @@
 import UIKit
 
-#if os(xrOS)
-private let haptic: FakeHaptic = .init()
-#else
 private let haptic: UIImpactFeedbackGenerator = .init(style: .medium)
-#endif
 
 private var hideTasks: [HideTask] = []
 
